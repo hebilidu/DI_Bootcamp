@@ -1,0 +1,21 @@
+#bleu {
+    background-color: blue;
+}
+
+#blanc {
+    background-color: white;
+}
+
+#rouge {
+    background-color: red;
+}
+
+.size {
+    width: 100px;
+    height: 200px;
+    display: inline-block;
+}
+
+#wrapper {
+    display: inline;
+}
