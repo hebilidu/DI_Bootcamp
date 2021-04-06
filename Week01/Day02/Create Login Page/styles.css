@@ -54,6 +54,17 @@ input[type=submit] {
     width: 100%;
 }
 
+input[type=button] {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 6px 5px;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
 #social {
     color: white;
     font-size: 2em;
