@@ -10,3 +10,7 @@ body {}
     border: 1px solid #BBB;
     transition: all 0.3s linear;
 }
+
+.zone:hover {
+    box-shadow: rgba(0, 0, 0, 8) 0px 5px 15px, inse
+}
