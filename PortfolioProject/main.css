@@ -7,8 +7,13 @@ body {
     margin-top: 90px;
 }
 
-#selfie {
+#selfie1 {
     width: 40px;
+    margin: 0;
+}
+
+#selfie2 {
+    width: 150px;
     margin: 0;
 }
 
@@ -17,7 +22,7 @@ body {
 }
 
 .opacity {
-    opacity: 0.5 !important;
+    opacity: 0.9 !important;
 }
 
 #about,

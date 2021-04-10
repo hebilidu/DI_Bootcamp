@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid pt-0">
-            <a class="navbar-brand" href="#"><img id="selfie" src="./media/selfie.jpg" alt="selfie"> lidu's page</a>
+            <a class="navbar-brand" href="#"><img id="selfie1" src="./media/selfie.jpg" alt="selfie"> lidu's page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,23 +31,158 @@
                         <a class="nav-link active" href="#blog">Blog</a>
                     </li>
                 </ul>
-                <!-- <form class="d-flex">
-                    <input type="email" class="form-control me-2" id="email1" aria-describedby="emailHelp" placeholder="Email">
-                    <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
-                    <button class="btn btn-success" type="btn btn-primary">Sign</button>
-                </form> -->
             </div>
         </div>
     </nav>
-    <div class="main container-fluid h-100">
-        <span></span>
-        <div id="about" class="aboutme bg-primary w-75 h-75 rounded mx-auto opacity">about me</div>
+    <div class="main container-fluid h-100 text-white">
+        <div id="about" class="aboutme bg-primary w-75 p-2 rounded mx-auto opacity text-center">
+            <h1 class="text-white">About Me</h1>
+            <div class="clearfix">
+                <img id=selfie2 src="./media/selfie.jpg" class="rounded-circle col-md-6 float-md-start mb-3 ms-md-3 pe-3" alt="selfie">
+                <p class="text-start p-3 text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et voluptates id, corrupti dolor incidunt officia error. Iste quaerat saepe maiores officiis eaque exercitationem voluptate iusto, odit necessitatibus facilis cum!
+                </p>
+            </div>
+        </div>
         <span id="portfolio"></span>
         <br><br><br><br>
-        <div class="portfolio bg-success w-75 h-75 rounded mx-auto opacity">portfolio</div>
+        <div class="portfolio bg-success w-75 p-2 rounded mx-auto opacity text-center">
+            <h1>Portfolio</h1>
+            <div class="d-flex flex-wrap justify-content-evenly h-75">
+                <div class="border rounded w-25 m-1">
+                    Week 01 Day 2
+                    <div class="exercises container border-top p-1 lh-1">
+                        <p>Exercises</p>
+                        <a href="./Create Login Page/index.html" class="btn btn-info btn-sm" tabindex="-1" role="button" aria-disabled="false">Login Page</a>
+                    </div>
+                    <div class="daily-challenge container border-top p-1 lh-1">
+                        <p>Daily challenge</p>
+                        <a href="./Avengers/avenger.html" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="false">Avengers</a>
+                    </div>
+                </div>
+                <div class="border rounded w-25 m-1">
+                    Week 01 Day 3
+                    <div class="exercises container border-top p-1 lh-1">
+                        <p>Exercises</p>
+                        <a href="./CV/index.html" class="btn btn-info btn-sm" tabindex="-1" role="button" aria-disabled="false">CV</a>
+                    </div>
+                    <div class="daily-challenge container border-top p-1 lh-1">
+                        <p>Daily challenge</p>
+                        <a href="./CSSPattern/index.html" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="false">CSS Pattern</a>
+                    </div>
+                </div>
+                <div class="border rounded w-25 m-1">
+                    Week 01 Day 4
+                    <div class="exercises container border-top p-1 lh-1">
+                        <p>Exercises</p>
+                        <a href="./01Jumbotron/index.html" class="btn btn-info btn-sm" tabindex="-1" role="button" aria-disabled="false">Jumbotron</a>
+                    </div>
+                    <div class="daily-challenge container border-top p-1 lh-1">
+                        <p>Daily challenge</p>
+                        <a href="./WWV/index.html" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="false">Veggies</a>
+                    </div>
+                </div>
+                <div class="border rounded w-25 m-1">
+                    Week 01 Day 5
+                    <div class="exercises container border-top p-1 lh-1">
+                        <p>Exercises</p>
+                        <a href="./Robot/index.html" class="btn btn-info btn-sm" tabindex="-1" role="button" aria-disabled="false">Robot</a>
+                    </div>
+                    <div class="daily-challenge container border-top p-1 lh-1">
+                        <p>Daily challenge</p>
+                        <a href="./CSSanimation/index.html" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="false">CSSanimation</a>
+                    </div>
+                </div>
+                <div class="border rounded w-25 m-1">Week 02 Day 1</div>
+                <div class="border rounded w-25 m-1">Week 02 Day 2</div>
+                <div class="border rounded w-25 m-1">Week 02 Day 3</div>
+                <div class="border rounded w-25 m-1">Week 02 Day 4</div>
+                <div class="border rounded w-25 m-1">Week 02 Day 5</div>
+                <div class="border rounded w-25 m-1">Week 03 Day 1</div>
+                <div class="border rounded w-25 m-1">Week 03 Day 2</div>
+                <div class="border rounded w-25 m-1">Week 03 Day 3</div>
+            </div>
+        </div>
         <span id="blog"></span>
         <br><br><br><br>
-        <div class="blog bg-info w-75 h-75 rounded mx-auto opacity">blog</div>
+        <div class="blog bg-info w-75 p-2 mb-5 rounded mx-auto opacity text-center">
+            <h1>Blog</h1>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="container text-black-50">
+                            <div class="row">
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 1 <span class="badge bg-primary">New</span></h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="far fa-chart-bar"></i> View details</button>
+                                </div>
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 2</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-mobile-alt"></i> View details</button>
+                                </div>
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 3</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i> View details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="container text-black-50">
+                            <div class="row">
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 4</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="far fa-chart-bar"></i> View details</button>
+                                </div>
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 5</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-mobile-alt"></i> View details</button>
+                                </div>
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 6</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i> View details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container text-black-50">
+                            <div class="row">
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 7</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="far fa-chart-bar"></i> View details</button>
+                                </div>
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 8</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-mobile-alt"></i> View details</button>
+                                </div>
+                                <div class="col-sm p-4 m-2 border rounded">
+                                    <h4>Heading 9</h4>
+                                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos non voluptas deserunt? Non odio cum sint similique officiis est eos nihil ab velit ducimus ex et, quae eum vitae harum?</h6>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i> View details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
