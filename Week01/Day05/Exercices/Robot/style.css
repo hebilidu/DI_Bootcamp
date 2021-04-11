@@ -3,20 +3,20 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.head, 
-.left_arm, 
-.torso, 
-.right_arm, 
-.left_leg, 
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
 .right_leg {
-     background-color: #5f93e8;
+    background-color: #5f93e8;
 }
 
-.head { 
-    width: 200px; 
-    margin: 0 auto; 
-    height: 150px; 
-    border-radius: 200px 200px 0 0; 
+.head {
+    width: 200px;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 200px 200px 0 0;
     margin-bottom: 10px;
 }
 
@@ -24,46 +24,48 @@ h1 {
     display: flex;
 }
 
-.left_eye, .right_eye { 
-    width: 20px; 
-    height: 20px; 
-    border-radius: 15px; 
-    background-color: white;  
+.left_eye,
+.right_eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .left_eye {
-    position: relative; 
-    top: 100px; 
-    left: 40px; 
-} 
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
 
-.right_eye { 
-    position: relative; 
-    top: 100px; 
-    left: 120px; 
+.right_eye {
+    position: relative;
+    top: 100px;
+    left: 120px;
 }
 
 .head:hover {
     width: 300px;
     transition: 0.5s ease-in-out;
-    /*transform: scale(1.1);*/
+    /* transform: scale(1.1); */
 }
 
-.upper_body { 
+.upper_body {
     width: 300px;
     margin: 0 auto;
     height: 150px;
     display: flex;
-    justify-content: center; 
-} 
+    justify-content: center;
+}
 
-.left_arm, .right_arm { 
-    width: 40px; 
+.left_arm,
+.right_arm {
+    width: 40px;
     height: 125px;
-    border-radius: 100px; 
-} 
+    border-radius: 100px;
+}
 
-.left_arm { 
+.left_arm {
     margin-right: 10px;
     transition: 0.5s;
 }
@@ -77,7 +79,7 @@ h1 {
     transform: rotate(30deg);
 }
 
-.right_arm { 
+.right_arm {
     margin-left: 10px;
     transition: transform 1s;
 }
@@ -90,27 +92,28 @@ h1 {
     transform: rotate(-390deg);
 }
 
-.torso { 
-    width: 200px; 
+.torso {
+    width: 200px;
     height: 200px;
-    border-radius: 0 0 50px 50px; 
+    border-radius: 0 0 50px 50px;
 }
 
-.lower_body { 
-    width: 200px; 
+.lower_body {
+    width: 200px;
     height: 200px;
     margin: 0 auto;
     display: flex;
 }
 
-.left_leg, .right_leg { 
-    width: 40px; 
+.left_leg,
+.right_leg {
+    width: 40px;
     height: 120px;
-    border-radius: 0 0 100px 100px; 
-} 
+    border-radius: 0 0 100px 100px;
+}
 
-.left_leg { 
-    margin-left: 45px; 
+.left_leg {
+    margin-left: 45px;
 }
 
 .left_leg:hover {
@@ -121,8 +124,8 @@ h1 {
     transform: rotate(20deg);
 }
 
-.right_leg { 
-    margin-left: 30px; 
+.right_leg {
+    margin-left: 30px;
 }
 
 .right_leg:hover {
