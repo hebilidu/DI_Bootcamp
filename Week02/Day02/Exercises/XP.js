@@ -9,6 +9,7 @@ if (x > y) {
 };
 
 // Exercise 2: Chihuahua
+var favDogType = prompt("What is your preferred dog ?");
 var newDog = "Chihuahua";
 console.log(newDog, "is", newDog.length, "characters long.");
 console.log(newDog.toUpperCase());
