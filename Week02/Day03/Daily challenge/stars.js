@@ -9,3 +9,18 @@
 // * * * *  
 // * * * * *
 // * * * * * *
+// Single loop solution :
+let str1 = "*";
+for (let i = 0; i < 6; i++) {
+    console.log(str1);
+    str1 += "*";
+};
+// Nested loops solution :
+let str2 = "*";
+for (let i = 0; i < 6; i++) {
+    let str2 = "";
+    for (j = 0; j < i + 1; j++) {
+        str2 += "*";
+    }
+    console.log(str2);
+}
