@@ -1,4 +1,4 @@
-console.log("****** Week 02 Day 02 - Daily challenge: Words in the Stars ******");
+console.log("****** Week 02 Day 04 - Daily challenge: Words in the Stars ******");
 
 // Get the words
 let wordList = [];
