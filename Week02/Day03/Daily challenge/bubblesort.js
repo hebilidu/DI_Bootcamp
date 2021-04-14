@@ -3,7 +3,6 @@ const numbers = [5, 0, 9, 1, 7, 4, 2, 6, 3, 8];
 // 1. Using the .toString() method convert the array to a string.
 str = numbers.toString();
 // 2. Using the .join()method convert the array to a string. Try passing different values into the join.
-// Eg .join(“+”), .join(” “), .join(“”)
 strplus = numbers.join("+");
 strminus = numbers.join("-");
 strvoid = numbers.join("");
@@ -27,3 +26,4 @@ for (let i = 0; i < numbers.length; i++) {
         };
     };
 };
+console.log("The sorted array is", numbers);

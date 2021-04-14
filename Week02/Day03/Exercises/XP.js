@@ -106,14 +106,18 @@ let family = {
     Stevens: "soccer",
     Castelli: "bowling"
 };
-let keylist = [];
-let valuelist = [];
-for (nam in family) {
-    keylist.push(nam);
-    valuelist.push(family[nam]);
-}
+// let keylist = [];
+// let valuelist = [];
+// for (nam in family) {
+//     keylist.push(nam);
+//     valuelist.push(family[nam]);
+// }
+let keylist = Object.keys(family);
+let valuelist = Object.values(family);
+let entrylist = Object.entries(family);
 console.log("List of keys = ", keylist);
 console.log("List of values = ", valuelist);
+console.log("List of entries = ", entrylist);
 
 console.log("\n****** Week 02 Day 03 - XP Exercise 6 ******");
 let details = {
