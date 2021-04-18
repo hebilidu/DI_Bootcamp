@@ -19,6 +19,7 @@ function buildLine(word, reflen) {
     for (i = 0; i < reflen - len; i++) {
         line += " ";
     };
+    // alternative for "for" loop : " ".repeat(reflen - len);
     line += " *";
     return line;
 };
