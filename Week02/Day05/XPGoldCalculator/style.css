@@ -1,0 +1,32 @@
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    border-radius: 5px;
+    border-color: lightcyan;
+    width: 70px;
+    height: 70px;
+}
+
+#display {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.digit {
+    background-color: lightgreen;
+}
+
+.op {
+    background-color: lightsalmon;
+}
+
+.reset {
+    width: 145px;
+    background-color: lightsteelblue;
+}
+
+.clear {
+    width: 145px;
+    background-color: lightcoral;
+}
