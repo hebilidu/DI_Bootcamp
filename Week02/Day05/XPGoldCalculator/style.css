@@ -1,6 +1,6 @@
 section {
     background-color: grey;
-    width: fit-content;
+    width: max-content;
     border-radius: 1em;
     border-color: lightcyan;
     border-style: solid;
@@ -16,7 +16,7 @@ button {
     border-style: solid;
     width: 70px;
     height: 70px;
-    padding: 0 0;
+    margin: 2px;
 }
 
 #display {
@@ -25,19 +25,19 @@ button {
 }
 
 .digit {
-    background-color: lightgreen;
+    background-color: green;
 }
 
 .op {
-    background-color: lightsalmon;
+    background-color: salmon;
 }
 
 .reset {
-    width: 145px;
-    background-color: lightsteelblue;
+    width: 147px;
+    background-color: mediumslateblue;
 }
 
 .clear {
-    width: 145px;
-    background-color: lightcoral;
+    width: 147px;
+    background-color: red;
 }
