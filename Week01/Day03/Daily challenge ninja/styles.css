@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orange,
+.ocre,
+.brown {
+    height: 2em;
+    width: 2em;
+    border: 2px;
+    border-color: white;
+    border-radius: 2px;
+}
+
+.orange {
+    background-color: rgb(255, 136, 0);
+}
+
+.ocre {
+    background-color: rgb(241, 215, 166)
+}
+
+.brown {
+    background-color: brown;
+}
+
+.quattuor1,
+.quattuor2,
+.quattuor3,
+.line1,
+.line2,
+.line3 {
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+}

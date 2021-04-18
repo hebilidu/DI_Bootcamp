@@ -28,3 +28,18 @@ Make sure you get the grammar correct.
     For more than one bottle, you pass “them” around.
 
 */
+while (true) {
+    nb = +prompt("Please enter number of bottles : ");
+    if (!(isNaN(nb) || nb < 1)) { break };
+};
+let nb_left = nb;
+counter = 1;
+while (nb_left > 0) {
+    bot = " bottles";
+    if (nb_left === 1) { bot = " bottle" };
+    console.log(nb_left + bot + " of beer on the wall");
+    console.log(nb_left + bot + " of beer");
+    console.log("Take ", counter, "down, pass it around");
+    nb_left -= counter;
+    counter++;
+};
