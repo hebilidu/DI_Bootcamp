@@ -42,7 +42,7 @@ function equal() {
             result = Number(txt1) - Number(txt2);
             break;
         case "*":
-            result = Number(txt1) + Number(txt2);
+            result = Number(txt1) * Number(txt2);
             break;
         case "/":
             result = Number(txt1) / Number(txt2);

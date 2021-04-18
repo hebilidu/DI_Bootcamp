@@ -36,10 +36,14 @@ let nb_left = nb;
 counter = 1;
 while (nb_left > 0) {
     bot = " bottles";
+    pronoun = " it ";
     if (nb_left === 1) { bot = " bottle" };
+    if (counter > 1) { pronoun = " them " };
     console.log(nb_left + bot + " of beer on the wall");
     console.log(nb_left + bot + " of beer");
-    console.log("Take ", counter, "down, pass it around");
+    console.log("Take " + counter + " down, pass" + pronoun + "around");
     nb_left -= counter;
     counter++;
 };
+console.log("0 bottles of beer on the wall");
+console.log("0 bottles of beer...");
