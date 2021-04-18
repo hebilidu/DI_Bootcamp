@@ -1,8 +1,6 @@
 /* *********************************************************************************** */
 console.log("\n****** Week02 Day05 - JS: Mini project - XP Gold : Calculator ******");
 
-let mem1 = 0;
-let mem2 = 0;
 let txt1 = "0";
 let txt2 = "0";
 let statuses = { 0: "Entering 1st operand", 1: "+", 2: "-", 3: "*", 4: "/", 5: "=" };
@@ -15,16 +13,21 @@ function addVal(txt) {
 function number(n) {
     if (status === "=") { reset(); };
     if (status === 0) {
-        if (n === '.') { txt1 += n; } else { txt1 = Number(txt1 += n).toString(); };
+        if (n === '.') { if (txt1.indexOf(".") === -1) { txt1 += n; } } else {
+            txt1 = Number(txt1 += n).toString();
+        };
         addVal(txt1);
     } else {
-        if (n === '.') { txt2 += n; } else { txt2 = Number(txt2 += n).toString(); };
+        if (n === '.') { if (txt2.indexOf(".") === -1) { txt2 += n; } } else {
+            txt2 = Number(txt2 += n).toString();
+        };
         addVal(txt2);
     };
 }
 
 function operator(op) {
-    if (status === 0) {
+    if (status === 0 || status === "=") { status = op; } else {
+        equal();
         status = op;
     }
 }
@@ -46,6 +49,7 @@ function equal() {
             break;
     }
     status = "=";
+    txt2 = "0";
     txt1 = result.toString();
     addVal(txt1);
 }
