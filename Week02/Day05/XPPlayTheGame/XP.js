@@ -39,10 +39,10 @@ function test(userNumber, computerNumber) {
             alert(`Out of chances. Number to guess was ${computerNumber}`);
             return
         } else if (userNumber > computerNumber) {
-            alert("Your number is bigger then the computer’s, guess again");
+            alert("Your number is bigger than the computer’s, guess again");
             userNumber = askNumber();
         } else {
-            alert("Your number is smaller then the computer’s, guess again");
+            alert("Your number is smaller than the computer’s, guess again");
             userNumber = askNumber();
         }
         nbTries++;
