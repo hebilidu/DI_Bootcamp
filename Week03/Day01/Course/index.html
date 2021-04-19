@@ -1,17 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 04 Day 01 - DOM</title>
+    <title>Week03 Day01 - DOM</title>
 </head>
 
 <body>
     <h1>Week 04 Day 01 - DOM</h1>
 
+    <div id="first_div"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+
+<!-- <html>
+
+<body>
+    <div id="user">Users:</div>
+    <ul>
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+</body>
+
+</html> -->
+
+<!-- <html>
+
+<head>
+    <title>DOM!!!</title>
+</head>
+
+<body>
+    <h1 id="one">Welcome</h1>
+    <p>This is the welcome message.</p>
+    <h2>Technology</h2>
+    <p>This is the technology section.</p>
+
+    <script>
+        let text = document.getElementById("one").innerHTML;
+        alert("The first heading is " + text);
+    </script>
+
+</body>
+
+</html> -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week03 Day01 - DOM</title>
+</head>
+
+<body>
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+
     <script src="script.js"></script>
 </body>
 
 </html>
+
+<!-- <html>
+​
+<body>
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+    <script>
+        
+        //1. The div node => to check go to console and type "div"
+        let div = document.querySelector('#container');
+​
+        // return an array containing both ul's
+        let list = document.getElementsByTagName('ul');
+​
+        // return the item with the class list
+        // .children returns an array of the items
+        let list_1_children = document.getElementsByClassName('list')[0].children;
+        let list_2_children = document.getElementsByClassName('list')[1].children;
+        
+        // 2. The ul nodes, and render all of it's children one by one
+        // return the li element
+        console.log(list_1_children[0])
+        console.log(list_1_children[1])
+        // return the li element value (innerHTML)
+        console.log(list_2_children[0].innerHTML)
+        console.log(list_2_children[1].innerHTML)
+        
+        
+        // 3. The first li of each ul
+        for (i = 0; i < list.length; i++) {
+            let child = list[i].firstElementChild;
+            child.style.backgroundColor = "red";
+            console.log();
+        }
+        
+    </script>
+</body>
+​
+</html>
+ -->
