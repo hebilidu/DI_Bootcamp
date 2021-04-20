@@ -5,11 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS - Functions</title>
+    <title>JS - DOM</title>
 </head>
 
 <body>
-    <h1>Week 03 Day 02 - </h1>
+    <!-- <h1>Week 03 Day 02 - </h1>
+    <form>
+        <input type="button" name="test" value="Click me" onclick="inform()">
+    </form>
+
+    <script>
+        function inform() {
+            alert("You clicked me")
+        }
+    </script> -->
+
+    <!-- <h1>Week03 Day02 - Course - Exercise 1</h1>
+    <table id="sampleTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table>
+
+    <input type="button" onclick="insert_Row()" value="Insert row">
+    <input type="button" onclick="insert_Col()" value="insert_Col"> -->
+
+    <!-- IV. Event object -->
+    <!-- <button id="btn">Click me</button>
+    <button id="btn1">Hey Hey</button>
+
+    <script>
+        let x = document.getElementById("btn")
+        let y = document.getElementById("btn1")
+
+        y.addEventListener("mouseover", RespondMouseOver);
+
+        x.addEventListener("mouseover", RespondMouseOver);
+
+        function RespondMouseOver(e) {
+            console.log("e", e)
+                // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+                // e.type: mouseover
+            console.log("e.target: ", e.target)
+                // e.target:  <button id=​"btn1">​Hey Hey​</button>​
+        }
+    </script> -->
+
+    <!-- Event Bubbling : the event is first captured and handled by the innermost element 
+    and then propagated to outer elements. -->
+    <!-- <style>
+        div {
+            border: 2px solid blue
+        }
+        
+        button {
+            border: 2px solid red
+        }
+    </style>
+
+    <section id="section">
+        <div id="div">
+            <button id="btn">Click me</button>
+        </div>
+    </section>
+    <script>
+        let x = document.getElementById("btn")
+        let y = document.getElementById("div")
+        let z = document.getElementById("section")
+
+        x.addEventListener("click", XRespondClick);
+        y.addEventListener("click", YRespondClick);
+        z.addEventListener("click", ZRespondClick, true);
+
+        function XRespondClick(e) {
+            alert("BTN is Clicked")
+        }
+
+        function YRespondClick(e) {
+            alert("DIV is Clicked")
+        }
+
+        function ZRespondClick(e) {
+            alert("SECTION is Clicked")
+        }
+    </script> -->
+
+    <!-- Exercise 3 -->
+    <div id="myDiv">
+        <button id="myBtn">Style</button>
+    </div>
+    <script>
+        let btn = document.getElementById("myBtn");
+        let div = document.getElementById("myDiv");
+
+        btn.addEventListener("click", MouseClickBtn);
+        btn.addEventListener("mouseover", MouseOverBtn);
+        div.addEventListener("mouseover", MouseOverDiv);
+
+        function MouseClickBtn() {
+            alert("Button Clicked")
+        }
+
+        function MouseOverBtn() {
+            alert("My mouse is over the btn");
+        }
+
+        function MouseOverDiv() {
+            alert("My mouse is over of the div")
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>

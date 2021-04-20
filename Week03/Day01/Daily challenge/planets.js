@@ -32,6 +32,7 @@ function toggle() {
     fullscreen = !fullscreen;
 }
 
+// List of planets with their respective number of moons
 planetList = [
     ["Mercury", 0],
     ["Venus", 0],
@@ -42,10 +43,13 @@ planetList = [
     ["Uranus", 27],
     ["Neptune", 14],
 ];
-// Create div for each planet
+// One set container for a planet and its moons. Moons are inside their own container
 for (i in planetList) {
     let setdiv = document.createElement('div');
     setdiv.classList.add("set");
+    setdiv.style.display = 'flex';
+    setdiv.style.justifyContent = 'flex-start';
+    setdiv.style.alignItems = 'center';
     document.getElementsByTagName('section')[0].appendChild(setdiv);
 
     let planetdiv = document.createElement('div');
@@ -56,13 +60,22 @@ for (i in planetList) {
     planetdiv.style.backgroundRepeat = "no-repeat";
     setdiv.appendChild(planetdiv);
 
+    // Add a div to contain all moons in a flex-wrapped mode
+    let moonblockdiv = document.createElement('div');
+    moonblockdiv.classList.add("block");
+    moonblockdiv.style.display = 'flex';
+    moonblockdiv.style.flexWrap = 'wrap';
+    setdiv.appendChild(moonblockdiv);
+
     for (j = 0; j < planetList[i][1]; j++) {
         let moondiv = document.createElement('div');
         moondiv.classList.add("moon");
-        setdiv.appendChild(moondiv);
+        moonblockdiv.appendChild(moondiv);
+        // setdiv.appendChild(moondiv);
     };
 };
 
+// Simplified version of the exercise, without the moons
 // for (i in planetList) {
 //     let planetdiv = document.createElement('div');
 //     planetdiv.classList.add("planet", planetList[i][0]);

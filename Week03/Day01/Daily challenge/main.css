@@ -5,6 +5,9 @@ body {
     padding: 10px;
 }
 
+
+/* Toggling to fullscreen - Nothing to do with the exercise. Just for fun */
+
 #top {
     display: flex;
     justify-content: space-between;
@@ -23,15 +26,12 @@ body {
     cursor: pointer;
 }
 
-.set {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+
+/* I've tweaked some of the originally provided style */
 
 .planet {
-    width: 5em;
-    height: 5em;
+    width: 150px;
+    height: 6em;
     text-align: center;
     padding: 10px;
     /* position: relative; */
