@@ -1,0 +1,1 @@
+console.log("\n****** Week03 Day03 - JS DOM Animations - XP Exercise 1 : Move The Box ******");
