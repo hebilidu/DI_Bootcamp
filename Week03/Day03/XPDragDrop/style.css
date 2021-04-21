@@ -5,3 +5,18 @@
 body {
     padding: 50px
 }
+
+#draggedBox {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+#drop_container {
+    border: 1px solid #000;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    float: right;
+    margin: 20px;
+}
