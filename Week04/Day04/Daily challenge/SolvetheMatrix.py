@@ -11,14 +11,7 @@
 # then he replaces every group of symbols between two alpha characters by a space.
 
 # Using his technique, try to decode this matrix:
-#     7i3
-#     Tsi
-#     h%x
-#     i #
-#     sM 
-#     $a 
-#     #t%
-#     ^r!
+
 list = [
     '7i3',
     'Tsi',
@@ -56,4 +49,5 @@ def dematrix(*arg):
                     current_is_space = True
     return new_str
 
-print(dematrix(*list))
+print("\nCoded message :", *list)
+print("Decoded :",dematrix(*list), "\n")
