@@ -17,3 +17,13 @@ def is_alpha(str):
         if not(64 < code < 91 or 96 < code < 123):
             return False
     return True
+
+def prompt_int_in_range(inf, sup):
+    ''' Asks for and returns an integer within a range 
+    '''
+    number = None
+    while type(number) is not int:
+        try:
+            return int(input(“Please enter a number between {} and {} : “.format(inf, sup)))
+        except ValueError:
+            print(“%s is not an integer.\n” % number)
