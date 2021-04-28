@@ -31,7 +31,29 @@ list = [
 ]
 def dematrix(*arg):
     '''Transpose lines of text to be read by columns into a continuous string'''
-    print(arg)
+    # Find longest string
+    longest = 0
+    for str in arg:
+        if len(str) > longest:
+            longest = len(str)
+    # Build a string by reading the 1st char of each string, then 2nd, ... and get rid of excess spaces
+    new_str = ''
+    current_is_space = False
+    for idx in range(len(str)):
+        for str in arg:
+            # Case when line is shorter that the longest line
+            # print(idx, str,new_str+'.')
+            if len(str) <= idx:
+                if not current_is_space:
+                    new_str += ' '
+                    current_is_space = True
+            else:
+                if str[idx].isalpha():
+                    new_str += str[idx]
+                    current_is_space = False
+                elif not current_is_space:
+                    new_str += ' '
+                    current_is_space = True
+    return new_str
 
-dematrix(list)
-dematrix(*list)
+print(dematrix(*list))
