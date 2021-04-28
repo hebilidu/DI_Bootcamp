@@ -25,6 +25,7 @@ def main():
         '|:B:i:r:t:h:d:a:y:|',
         '|                 |',
         '~~~~~~~~~~~~~~~~~~~']
+    
     birthdate = input('What is your birthdate (dd/mm/yyyy) ? ')
     year = int(birthdate[6:10])
     age = 2021 - int(year)
@@ -51,6 +52,15 @@ def main():
 
     for layer in layers:
         print(layer + is_leap * layer)
+
+    # Calculate age more precisely
+    today = '27/04/2021'
+    today_y = int(today[6:10])
+    today_m = int(today[3:5])
+    today_d = int(today[0:2])
+    month = int(birthdate[3:5])
+    day = int(birthdate[0:2])
+
 
 if __name__ == "__main__":
     main()
