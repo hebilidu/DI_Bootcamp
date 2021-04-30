@@ -11,20 +11,4 @@ while True:
     print('\n' + ','.join(wordlist))
     wordlist.sort()
     print(','.join(wordlist) + '\n')
-
-    # Second method
-    print('Same with use of list comprehension...')
-    newlist = []
-    word = ''
-
-    for letter in inp:
-        if letter == ',':
-            newlist.append(word)
-            word = ''  
-        else:
-            word += letter
-    newlist.append(word)
     
-    print('\n' + ','.join(newlist))
-    newlist.sort()
-    print(','.join(newlist) + '\n')
