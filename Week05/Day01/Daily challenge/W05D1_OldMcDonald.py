@@ -18,9 +18,9 @@ class Farm:
         out += f'\n     E-I-E-I-0!\n'
         return out
     def get_animal_types(self):
-        list = [key for key in self.animals]
-        list.sort()
-        return list
+        list_types = [key for key in self.animals]
+        list_types.sort()
+        return list_types
     def get_short_info(self, list):
         outlist = []
         for item in list:
