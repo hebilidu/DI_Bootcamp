@@ -27,3 +27,12 @@ def prompt_int_in_range(inf, sup):
             return int(input(“Please enter a number between {} and {} : “.format(inf, sup)))
         except ValueError:
             print(“%s is not an integer.\n” % number)
+
+# TIME
+import datetime
+
+present = datetime.datetime.now()
+future = datetime.datetime(2022,1,1,0,0,0)
+diff = future - present
+days, hours, minutes = diff.days, diff.seconds // 3600, diff.seconds // 60 % 60
+print(f"The delta between present and future is {days} days, {hours} hours and {minutes} minutes.\n")
