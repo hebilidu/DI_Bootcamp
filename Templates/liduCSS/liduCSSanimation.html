@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: hsla(200, 100%, 20%);
+            height: 400px;
+            width: 400px;
+            margin: auto;
+        }
+        
+        .child {
+            background-color: red;
+            border-radius: 50%;
+            height: 50%;
+            width: 50%;
+            /* transition: transform 1s; */
+            animation: left-to-right 1s ease-in forwards infinite alternate 0.5s;
+        }
+        
+        .parent:hover .child {
+            /* background-color: green; */
+            /* transform: translateX(100%); */
+            /* animation: left-to-right 1s ease-in forwards 3 alternate 0.5s; */
+            animation-play-state: paused;
+        }
+        
+        @keyframes left-to-right {
+            0% {
+                transform: tranlateX(0);
+            }
+            33% {
+                transform: translateY(100%);
+            }
+            66% {
+                transform: translateX(100%) translateY(100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>

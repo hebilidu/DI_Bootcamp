@@ -17,7 +17,7 @@ def is_alphanum(str):
 
 def is_alpha(str):
     ''' Equivalent to built-in isalpha()
-    codes 48 to 57: numeric (0-9) / 65 to 90: upper alpha (A-Z) / 97 to 122: lower alpha (a-z)
+    codes 65 to 90: upper alpha (A-Z) / 97 to 122: lower alpha (a-z)
     '''
     for char in str:
         code = ord(char)
