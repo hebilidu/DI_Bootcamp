@@ -6,8 +6,18 @@
             "port": 5432,
             "askForPassword": true,
             "driver": "PostgreSQL",
-            "name": "local",
-            "database": "hollywood",
+            "name": "public",
+            "database": "public",
+            "username": "lidu"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "dvdrental",
+            "database": "dvdrental",
             "username": "lidu"
         }
     ]
