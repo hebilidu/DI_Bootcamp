@@ -19,6 +19,16 @@
             "name": "dvdrental",
             "database": "dvdrental",
             "username": "lidu"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "hollywood",
+            "database": "hollywood",
+            "username": "lidu"
         }
     ]
 }
