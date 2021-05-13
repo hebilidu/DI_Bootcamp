@@ -2,11 +2,10 @@
     font-family: Lucida;
 }
 
-body {}
-
 .container {
     display: flex;
     flex-flow: column;
+    justify-content: center;
 }
 
 #upper {
@@ -17,19 +16,17 @@ body {}
     overflow: hidden;
 }
 
-#rear {}
-
 #roof {
-    height: 10vh;
-    width: 38vw;
+    height: 5vh;
+    width: 30vw;
     margin-left: auto;
     border-top-left-radius: 50%;
     background-color: darkslateblue;
 }
 
 #cabin {
-    height: 55vh;
-    width: 30vw;
+    height: 45vh;
+    width: 22vw;
     margin-left: auto;
     background-color: darkslateblue;
     overflow: hidden;
@@ -47,14 +44,14 @@ body {}
 
 #wind-frt {
     height: 15vh;
-    width: 12vw;
+    width: 15vw;
     background-color: white;
 }
 
 #floor {
-    height: 10vh;
-    width: 40vw;
-    background-color: darkslateblue;
+    height: 7vh;
+    width: 30vw;
+    background-color: rgb(63, 60, 84);
     overflow: hidden;
 }
 
@@ -66,16 +63,16 @@ body {}
 }
 
 #soupape {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     background-color: red;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
 }
 
 #bell {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     background-color: red;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
@@ -119,14 +116,20 @@ body {}
 }
 
 #cylinder {
-    height: 48vh;
-    width: 50vw;
-    background-color: darkslateblue;
+    height: 30vh;
+    width: 45vw;
+    background-color: rgb(63, 60, 84);
     border-top-right-radius: 12%;
     border-bottom-right-radius: 12%;
 }
 
-#lower,
+#lower {
+    width: 85vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
 .group {
     display: flex;
     flex-flow: row;
@@ -152,7 +155,8 @@ body {}
     margin-right: 10px;
 }
 
-img {
+.small,
+.large {
     transform: rotate(360deg);
     animation: anim 1.5s infinite linear;
 }
@@ -163,5 +167,24 @@ img {
     }
     100% {
         transform: rotateZ(360deg);
+    }
+}
+
+.smok {
+    height: 22vh;
+    width: 15vw;
+    margin-left: 55vw;
+    margin-bottom: -6vh;
+    opacity: 1;
+    animation: fade 2s infinite linear;
+}
+
+@keyframes fade {
+    0%,
+    100% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
     }
 }
