@@ -1,0 +1,167 @@
+* {
+    font-family: Lucida;
+}
+
+body {}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+#upper {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    top: 110px;
+    overflow: hidden;
+}
+
+#rear {}
+
+#roof {
+    height: 10vh;
+    width: 38vw;
+    margin-left: auto;
+    border-top-left-radius: 50%;
+    background-color: darkslateblue;
+}
+
+#cabin {
+    height: 55vh;
+    width: 30vw;
+    margin-left: auto;
+    background-color: darkslateblue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#wind_bck {
+    height: 15vh;
+    width: 12vw;
+    background-color: white;
+    padding: 10px;
+}
+
+#wind-frt {
+    height: 15vh;
+    width: 12vw;
+    background-color: white;
+}
+
+#floor {
+    height: 10vh;
+    width: 40vw;
+    background-color: darkslateblue;
+    overflow: hidden;
+}
+
+#toplayer {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#soupape {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+#bell {
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+#chimney {
+    display: flex;
+    flex-direction: column;
+}
+
+#trapez {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 50px 50px 50px;
+    height: 0;
+    width: 100px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 40px 0 100px 0;
+    align-self: center;
+}
+
+#trapez:after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    width: 50px;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 100px 75px 0 75px;
+    align-self: center;
+}
+
+#rect {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    align-self: center;
+}
+
+#cylinder {
+    height: 48vh;
+    width: 50vw;
+    background-color: darkslateblue;
+    border-top-right-radius: 12%;
+    border-bottom-right-radius: 12%;
+}
+
+#lower,
+.group {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.large {
+    height: 230px;
+    width: 230px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    overflow: visible;
+}
+
+.small {
+    height: 115px;
+    width: 115px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    transform: rotate(360deg);
+    animation: anim 1.5s infinite linear;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
