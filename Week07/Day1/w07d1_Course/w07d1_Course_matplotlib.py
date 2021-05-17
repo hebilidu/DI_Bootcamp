@@ -57,7 +57,7 @@ data = pd.read_csv('data.txt')
 # - Using NumPy, create an array of length 100 filled with random ints between 0 and 75
 randnums= np.random.randint(0,76,100)
 # - Reshape that array to a 50 x 2 matrix
-wrk_array = 
+
 
 # - Make a scatter plot of the 1st column as the x axis and the second column as the y axis
 
