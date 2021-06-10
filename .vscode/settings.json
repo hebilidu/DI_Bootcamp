@@ -30,5 +30,6 @@
             "database": "hollywood",
             "username": "lidu"
         }
-    ]
+    ],
+    "python.pythonPath": "/usr/local/bin/python"
 }

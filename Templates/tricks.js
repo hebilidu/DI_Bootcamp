@@ -1,6 +1,7 @@
 // 1. isAlphanumeric
 // 2. isNum_isAlpha
 // 3. getRandomColor
+// 4. Performance measure of a function
 
 function isAlphaNumeric(str) {
     var code, i, len;
@@ -50,3 +51,20 @@ function getRandomColor() {
     }
     return color;
 }
+
+// Performance measurement
+const nemo = ['nemo'];
+const large = new Array(100000).fill('nemo');
+
+function findNemo(array) {
+    let t0 = performance.now();
+    for (let i = 0; i <  array.length; i++) {
+        if (array[i] === 'nemo') {
+            console.log('Found NEMO!');
+        }
+    }
+    let t1 = performance.now();
+    console.log('Call to find Nemo took ' + (t1-t0) + 'ms');
+}
+
+findNemo()

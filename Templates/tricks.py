@@ -6,6 +6,8 @@
 # random_chuck_norris
 # get_job_by_category
 # Measure time for requests completion
+# Timer function / Decorator
+# Decorator pattern
 
 def is_alphanum(str):
     ''' Equivalent to built-in isalnum()
@@ -101,3 +103,34 @@ def measure_req_completion_time():
     r = requests.get('http://192.168.2.15/sqli-labs/Less-9', params=payload)
     roundtrip = time.time() - start
     print(round(roundtrip, 2), 's')
+
+# Timer function to be used as a decorator
+from time import perf_counter
+
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start = perf_counter()
+        payload = func(*args, **kwargs)
+        end = perf_counter()
+        print(colored(f"Elapsed time for {func.__name__}: {end - start: 0.6f} seconds", 'red'))
+        return payload
+    return wrapper
+
+@timer
+def function_to_measure(arg1, arg2):
+    # <Your code here>
+    pass
+
+# Decorator pattern
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print('****')
+        func(*args, **kwargs)
+        print('****')
+    return wrapper
+
+@my_decorator
+def greeting(text, emoji=':('):
+    print(text, emoji)
+
+greeting('Hello Toto')
