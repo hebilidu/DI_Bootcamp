@@ -1,4 +1,4 @@
-from time import time, perf_counter
+from time import perf_counter
 from termcolor import colored
 
 def timer(func):

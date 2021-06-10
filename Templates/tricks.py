@@ -8,6 +8,7 @@
 # Measure time for requests completion
 # Timer function / Decorator
 # Decorator pattern
+# sort-merge function
 
 def is_alphanum(str):
     ''' Equivalent to built-in isalnum()
@@ -134,3 +135,28 @@ def greeting(text, emoji=':('):
     print(text, emoji)
 
 greeting('Hello Toto')
+
+# Sort merge function (sorts an array)
+def merge_sort(arr):
+    if len(arr) == 1:
+        return arr
+    else:
+        a = arr[:len(arr)//2]
+        b = arr[len(arr)//2:]
+        
+        a = merge_sort(a)
+        b = merge_sort(b)
+        c = []
+        
+        i = 0
+        j = 0
+        while i < len(a) and j < len(b):
+            if a[i] < b[j]:
+                c.append(a[i])
+                i = i + 1
+            else:
+                c.append(b[j])
+                j = j + 1
+        c += a[i:]
+        c += b[j:]
+        return c
