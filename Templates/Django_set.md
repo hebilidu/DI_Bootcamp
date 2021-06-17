@@ -18,6 +18,15 @@ pip install django
 <!-- Install api for accessing Postgres db -->
 pip install psycopg2
 
+<!-- Eventuellement: Bootstrap5 (also add in settings.py APPS) -->
+pip install django-bootstrap5
+
+<!-- Eventuellement: bootstrapform (also add in settings.py APPS) -->
+pip install django-bootstrap-form
+
+<!-- Eventuellement: django-star-ratings -->
+pip install django-star-ratings
+
 <!-- Eventuellement: Pillow (for pictures) -->
 pip install Pillow
 
