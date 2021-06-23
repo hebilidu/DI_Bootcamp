@@ -9,6 +9,9 @@ source <name>_venv/bin/activate
 <!-- Check version of packages installed by venv  -->
 pip list
 
+<!-- Apply an existing reauirements.txt -->
+pip install -r requirements.txt
+
 <!-- Update pip and setuptools in new virtual environment -->
 pip install --upgrade pip setuptools wheel
 
